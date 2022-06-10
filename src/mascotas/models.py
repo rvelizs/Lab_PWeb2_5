@@ -4,6 +4,6 @@ from django.db import models
 class Mascota(models.Model):
     nombre = models.CharField(max_length=50)
     descripcion = models.TextField(max_length=300)
-    dueño = models.CharField(max_length=50)
+    dueño = models.CharField(max_length=50, blank=False)
     tiempo = models.IntegerField()
     vip = models.BooleanField()
