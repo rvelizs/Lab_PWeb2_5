@@ -8,3 +8,7 @@ def myHomeView(*args, **kwards):
 
 def anotherView(request):
     return HttpResponse('<h1>Solo otra página</h1>')
+
+# Otra vista
+def presentacionView(request):
+    return HttpResponse('<h1>Saludos!</h1><br><h2>Soy Rodrigo Véliz Saihua y tengo 18 años</h2>')
