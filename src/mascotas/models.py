@@ -6,3 +6,4 @@ class Mascota(models.Model):
     descripcion = models.TextField(max_length=300)
     dueño = models.CharField(max_length=50)
     tiempo = models.IntegerField()
+    vip = models.BooleanField()
