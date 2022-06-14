@@ -6,7 +6,7 @@
 
     <body>
         {% extends 'base.html' %}
-        {% block content%} <br>
+        {% block content%}
         <h1>Hola Mundo desde DJango</h1>
         <h2>Con templates</h2>
         <p>
@@ -15,7 +15,13 @@
         </p>
         <ul>
             {% for myItem in myList %}
-                <li>{{ myItem }}</li>
+                <li>{{ forloop.counter }} - {{ myItem }}</li>
+            {% endfor %}
+        </ul>
+
+        <ul>
+            {% for myItem in myColors %}
+                <li>{{ forloop.counter0 }} - {{ myItem }}</li>
             {% endfor %}
         </ul>
         {% endblock %}

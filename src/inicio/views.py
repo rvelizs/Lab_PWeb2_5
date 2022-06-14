@@ -8,6 +8,7 @@ def myHomeView(request, *args, **kwards):
         'myText': 'Esto es sobre nosotros',
         'myNumber': 123,
         'myList': [33, 44,55],
+        'myColors': ['red','yellow','pink','purple','blue'],
     }
     return render(request,"home.html", myContext)
 
