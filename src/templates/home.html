@@ -24,15 +24,15 @@
                 </li>
             {% endfor %}
         </ul>
-        <ul>
+        <div>
             {% for myItem in myColors %}
-                <li>{{ forloop.counter0 }} - {{ myItem|capfirst }}
-                {% if myItem|length > 4 %}
+                {{ myItem|capfirst|linenumbers }}
+                {% if myItem|length > 4 %}    
                     - Color de nombre extenso
                 {% endif %}
-                </li>
+                <br>
             {% endfor %}
-        </ul>
+        </div>
         {% endblock %}
     </body>
 </html>
