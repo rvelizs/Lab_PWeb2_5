@@ -15,10 +15,15 @@
         </p>
         <ul>
             {% for myItem in myList %}
-                <li>{{ forloop.counter }} - {{ myItem }}</li>
+                <li>{{ forloop.counter }} - {{ myItem }}
+                {% if myItem ==  33 %}
+                    - Número mágico
+                {% elif myItem > 50 %}
+                    - Número mayor que 50
+                {% endif %}
+                </li>
             {% endfor %}
         </ul>
-
         <ul>
             {% for myItem in myColors %}
                 <li>{{ forloop.counter0 }} - {{ myItem }}</li>
