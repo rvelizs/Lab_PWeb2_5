@@ -26,7 +26,7 @@
         </ul>
         <ul>
             {% for myItem in myColors %}
-                <li>{{ forloop.counter0 }} - {{ myItem }}
+                <li>{{ forloop.counter0 }} - {{ myItem|capfirst }}
                 {% if myItem|length > 4 %}
                     - Color de nombre extenso
                 {% endif %}
