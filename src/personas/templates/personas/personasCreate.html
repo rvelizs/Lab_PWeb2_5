@@ -1,6 +1,10 @@
 {% extends 'base.html' %}
 {% block content %}
-<form action='add' method='GET'>
+
+<!-- con GET y sin {% csrf_token %} se muestra la búsqueda -->
+<!-- con <input type='submit' value='Grabar'/> y {{ form.as_p }} se añade Persona -->
+
+<form action='add' method='POST'>{% csrf_token %}
     <input type='text' name='q' placeholder='buscar'/>
     <input type='submit' value='Buscar'/>
 </form>
